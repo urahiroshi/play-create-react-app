@@ -6,10 +6,10 @@ import registerServiceWorker from './registerServiceWorker';
 
 // for Sentry
 import Raven from 'raven-js';
-if (process.env.REACT_APP_SENTRY_DSN && process.env.REACT_APP_RELEASE) {
+if (process.env.REACT_APP_DSN && process.env.REACT_APP_RELEASE) {
   console.log('### Configure SENTRY');
   Raven.config(
-    process.env.REACT_APP_SENTRY_DSN,
+    process.env.REACT_APP_DSN,
     {
       release: process.env.REACT_APP_RELEASE
     }

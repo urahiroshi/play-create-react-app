@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Playground for create-react-app</h1>
         </header>
         <p className="App-intro">
-          Let's Play!
+          Release={process.env.REACT_APP_RELEASE || 'Development'}
         </p>
         <button onClick={() => { throw new Error('hogehoge'); }}>Error !</button>
       </div>

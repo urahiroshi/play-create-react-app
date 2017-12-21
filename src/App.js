@@ -13,7 +13,8 @@ class App extends Component {
         <p className="App-intro">
           Release={process.env.REACT_APP_RELEASE || 'Development'}
         </p>
-        <button onClick={() => { throw new Error('fugafugafuga'); }}>Error !</button>
+        <button onClick={() => { }}>Fixed Error !</button>
+        <button onClick={() => { throw new Error('piyo'); }}>New Error !</button>
       </div>
     );
   }
